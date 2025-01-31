@@ -6,7 +6,7 @@ body {
     background-image: url(/images/slots-final.png), url(/images/casinobg.jpg) ;
     background-repeat: no-repeat, repeat;
     background-size: fill;
-    background-position: center;
+    
 }
 
 main {
@@ -17,10 +17,11 @@ main {
     font-size: 50px;
     width: 1000px;
     height:1000px;
+    background-image: url(/images/slots-final.png);
     
 }
 
 table, th, td {
     border: 1px solid black;
-    position: ;
+    
 }
