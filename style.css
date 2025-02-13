@@ -7,7 +7,7 @@ body {
     background-repeat: repeat;
     background-position: center;
     background-size: fill;
-    
+    font-family: pixel;
 }
 
 main {
@@ -63,23 +63,60 @@ main {
     color: #ffe19c;
   }
 
-  .handle {
+  .lever {
     position: absolute;
-    right: -100%;
+    right: -70%;
     top: -10%;
-    width: 180px;
-    height: 450px;
+    width: 114px;
+    height: 451px;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease;
-    background: url(/images/slots-lever-sprites.png) left center;
+    background: url(/images/slots-lever-sprites-final.png) left center;
+    background-repeat: no-repeat;
   }
   
   @keyframes play {
-    100% {background-position: -1000px;}
+    100% {background-position: -568px;}
   }
 
-  .handle:active {
+  .lever:active {
     animation: play 0.8s steps(5) 1;
   }
+
+  .result-message {
+    position: absolute;
+    top: -40%;
+    width: 100%;
+    left: 20%;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
   
+  .show-message {
+    opacity: 1;
+  }
+  
+  .win-effect {
+    animation: flash 1s infinite;
+  }
+  
+  @keyframes flash {
+    0% {
+      box-shadow: 0 0 15px #fff;
+    }
+    50% {
+      box-shadow: 0 0 30px #ffeb3b;
+    }
+    100% {
+      box-shadow: 0 0 15px #fff;
+    }
+  }
+
+  @font-face {
+    font-family: pixel;
+    src: url(/fonts/PixelifySans-VariableFont_wght.ttf);
+  }
