@@ -68,7 +68,7 @@ main {
     right: -100%;
     top: -10%;
     width: 180px;
-    height: 1000px;
+    height: 450px;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease;
