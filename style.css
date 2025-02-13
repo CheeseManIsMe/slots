@@ -65,21 +65,21 @@ main {
 
   .handle {
     position: absolute;
-    right: -60%;
+    right: -100%;
     top: -10%;
-    width: 20px;
-    height: 250px;
-    background-image: url;
+    width: 180px;
+    height: 1000px;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    background: url(/images/slots-lever-sprites.png) left center;
   }
   
-  .handle:hover {
-    transform: scale(1.1);
+  @keyframes play {
+    100% {background-position: -1000px;}
   }
-  
+
   .handle:active {
-    transform: rotate(30deg);
+    animation: play 0.8s steps(5) 1;
   }
+  
