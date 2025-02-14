@@ -25,7 +25,7 @@ const reels = [
     // Randomize spin for each reel
     reels.forEach((reel) => {
       const randomStop = Math.floor(Math.random() * symbols.length) * -100;
-      reel.style.transition = "transform 0.5s cubic-bezier(0.23, 1, 0.32, 1)";
+      reel.style.translate = "transform 0.5s cubic-bezier(0.23, 1, 0.32, 1)";
       reel.style.transform = `translateY(${randomStop}px)`;
     });
   
